@@ -1,0 +1,17 @@
+﻿Build started 3/26/2015 6:29:35 PM.
+     1>Project "E:\work\NewEngine\Game\Game.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Cube.cpp src\Enemy.cpp src\Game.cpp src\main.cpp
+         Cube.cpp
+     1>e:\work\newengine\game\src\Cube.h(9): fatal error C1083: Cannot open include file: 'GameObject.h': No such file or directory
+         Enemy.cpp
+     1>e:\work\newengine\game\src\Enemy.h(9): fatal error C1083: Cannot open include file: 'GameObject.h': No such file or directory
+         Game.cpp
+     1>e:\work\newengine\game\src\Game.h(9): fatal error C1083: Cannot open include file: 'GameEngine.h': No such file or directory
+         main.cpp
+     1>e:\work\newengine\game\src\Game.h(9): fatal error C1083: Cannot open include file: 'GameEngine.h': No such file or directory
+     1>Done Building Project "E:\work\NewEngine\Game\Game.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.53

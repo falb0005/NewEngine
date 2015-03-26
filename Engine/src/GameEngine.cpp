@@ -26,13 +26,12 @@ void GameEngine::Initialize()
     SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
     640, 640,
     SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
-
   _graphicsObject = new GraphicsOpenGL();
   _graphicsObject->Initialize(_window);
 
   IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG | IMG_INIT_TIF | IMG_INIT_WEBP);
 
-  InitializeImpl();
+  InitializeImpl(_graphicsObject);
 
   /* Get the time at the beginning of our game loop so that we can track the
   * elapsed difference. */
@@ -57,13 +56,13 @@ void GameEngine::Update()
   // Calculating the time difference since our last loop.
   _engineTimer.Update();
 
-  UpdateImpl(_engineTimer.GetDeltaTime());
+  UpdateImpl(_graphicsObject, _engineTimer.GetDeltaTime());
 }
 
 void GameEngine::Draw()
 {
   // Set the draw colour for screen clearing.
-  _graphicsObject->SetClearColour(1.0f, 1.0f, 1.0f, 1.0f);
+  _graphicsObject->SetClearColour(0.25f, 0.25f, 0.25f, 1.0f);
 
   // Clear the renderer with the current draw colour.
   _graphicsObject->ClearScreen();

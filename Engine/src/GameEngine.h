@@ -39,8 +39,8 @@ public:
 protected:
   GameEngine();
 
-  virtual void InitializeImpl() = 0;
-  virtual void UpdateImpl(float dt) = 0;
+  virtual void InitializeImpl(Graphics *graphics) = 0;
+  virtual void UpdateImpl(Graphics * graphics, float dt) = 0;
   virtual void DrawImpl(Graphics *graphics, float dt) = 0;
 
   static GameEngine *_instance;

@@ -5,6 +5,12 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source\Cameras">
+      <UniqueIdentifier>{7ac9e706-79e2-49dc-951a-528d4200b1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MathUtils">
+      <UniqueIdentifier>{f4598120-c211-4f81-a5f7-755c89ec1e1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -34,6 +40,30 @@
     <ClCompile Include="src\GraphicsSDL.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="src\Cameras\Camera.cpp">
+      <Filter>Source\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cameras\OrthographicCamera.cpp">
+      <Filter>Source\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cameras\PerspectiveCamera.cpp">
+      <Filter>Source\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MathUtils\Matrix4x4.cpp">
+      <Filter>Source\MathUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MathUtils\Transform.cpp">
+      <Filter>Source\MathUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MathUtils\Vector2.cpp">
+      <Filter>Source\MathUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MathUtils\Vector3.cpp">
+      <Filter>Source\MathUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MathUtils\Vector4.cpp">
+      <Filter>Source\MathUtils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GameEngine.h">
@@ -59,6 +89,15 @@
     </ClInclude>
     <ClInclude Include="src\GraphicsSDL.h">
       <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cameras\Camera.h">
+      <Filter>Source\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cameras\OrthographicCamera.h">
+      <Filter>Source\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cameras\PerspectiveCamera.h">
+      <Filter>Source\Cameras</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

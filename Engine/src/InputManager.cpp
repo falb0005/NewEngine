@@ -222,7 +222,7 @@ void InputManager::Update(float dt)
   {
     auto keyMapItr = _keyMap.find(keysToRemoveItr->first);
     _keyMap.erase(keyMapItr);
-    printf("KEY ERASED %d\n", _keyMap.size());
+    //printf("KEY ERASED %d\n", _keyMap.size());
   }
   _keysToRemove.clear();
 
@@ -238,7 +238,7 @@ void InputManager::Update(float dt)
       std::pair<SDL_Keycode, SDL_EventType> keyPair(pressedKey, SDL_KEYDOWN);
       _keyMap.insert(keyPair);
 
-      printf("KEY DOWN %d\n", _keyMap.size());
+      //printf("KEY DOWN %d\n", _keyMap.size());
     }
   }
   else if (evt.type == SDL_KEYUP)
@@ -252,7 +252,7 @@ void InputManager::Update(float dt)
       keyMapItr->second = SDL_KEYUP;
       _keysToRemove.push_back(*keyMapItr);
 
-      printf("KEY UP %d\n", _keyMap.size());
+      //printf("KEY UP %d\n", _keyMap.size());
     }
   }
 

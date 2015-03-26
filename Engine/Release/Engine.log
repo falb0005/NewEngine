@@ -1,0 +1,33 @@
+﻿Build started 3/26/2015 6:29:24 PM.
+     1>Project "E:\work\NewEngine\Engine\Engine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Cameras\Camera.cpp src\Cameras\OrthographicCamera.cpp src\Cameras\PerspectiveCamera.cpp src\GameEngine.cpp src\GameObject.cpp src\Graphics.cpp src\GraphicsOpenGL.cpp src\GraphicsSDL.cpp src\InputManager.cpp src\MathUtils.cpp src\MathUtils\Matrix4x4.cpp src\MathUtils\Transform.cpp src\MathUtils\Vector2.cpp src\MathUtils\Vector3.cpp src\MathUtils\Vector4.cpp src\Timer.cpp
+         Camera.cpp
+     1>src\Cameras\Camera.cpp(2): fatal error C1083: Cannot open include file: 'SDL_opengl.h': No such file or directory
+         OrthographicCamera.cpp
+     1>src\Cameras\OrthographicCamera.cpp(2): fatal error C1083: Cannot open include file: 'SDL_opengl.h': No such file or directory
+         PerspectiveCamera.cpp
+     1>src\Cameras\PerspectiveCamera.cpp(2): fatal error C1083: Cannot open include file: 'SDL_opengl.h': No such file or directory
+         GameEngine.cpp
+     1>src\GameEngine.cpp(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+         GameObject.cpp
+         Graphics.cpp
+         GraphicsOpenGL.cpp
+     1>e:\work\newengine\engine\src\GraphicsOpenGL.h(6): fatal error C1083: Cannot open include file: 'SDL_opengl.h': No such file or directory
+         GraphicsSDL.cpp
+     1>src\GraphicsSDL.cpp(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+         InputManager.cpp
+     1>e:\work\newengine\engine\src\InputManager.h(9): fatal error C1083: Cannot open include file: 'SDL_events.h': No such file or directory
+         MathUtils.cpp
+         Matrix4x4.cpp
+         Transform.cpp
+         Vector2.cpp
+         Vector3.cpp
+         Vector4.cpp
+         Timer.cpp
+     1>src\Timer.cpp(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+     1>Done Building Project "E:\work\NewEngine\Engine\Engine.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.53
